@@ -23,6 +23,7 @@ require 'pp'        							# For pp => pretty printer
 # require 'pry'                     # For on the fly debugging
 require_relative 'block'					# class Block
 require_relative 'transaction'		# method Transactions
+require_relative 'client'
 
 LEDGER = []
 
@@ -64,6 +65,8 @@ def add_block
 end
 
 def launcher
+	llamada_client
+	puts "Arriba llamo al cliente"
 	puts "==========================="
 	puts ""
 	puts "Welcome to Simple Blockchain In Ruby !"
