@@ -37,12 +37,12 @@ class Block
 
   def self.first( *transactions )    # Create genesis block
     ## Uses index zero (0) and arbitrary previous_hash ("0")
-    puts "#FUNCION SELF.FIRST#{transactions}"
+    #puts "FUNCION SELF.FIRST#{transactions}"
     Block.new( 0, transactions, "0" )
   end
 
   def self.next( previous, transactions )
-    puts "#FUNCION SELF.NEXT#{transactions}"
+    #puts "FUNCION SELF.NEXT#{transactions}"
     Block.new( previous.index+1, transactions, previous.hash )
   end
 end  # class Block
