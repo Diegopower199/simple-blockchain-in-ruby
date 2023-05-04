@@ -7,6 +7,11 @@ Improved version of "Build your own blockchain from scratch in 20 lines of Ruby!
 
 # Run it
 
+## First 
+```
+$ ruby server.rb
+```
+
 ```
 $ ruby blockchain.rb
 ```
