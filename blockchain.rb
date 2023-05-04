@@ -55,6 +55,7 @@ end
 def add_block
 	i = 1
 	loop do
+		#puts "Informacion de Block.next#{Block.next( (instance_variable_get("@b#{i-1}")), get_transactions_data)}"
 		instance_variable_set("@b#{i}", Block.next( (instance_variable_get("@b#{i-1}")), get_transactions_data))
 		LEDGER << instance_variable_get("@b#{i}")
 		p "============================"
@@ -66,7 +67,7 @@ end
 
 def launcher
 	llamada_client
-	puts "Arriba llamo al cliente"
+	puts "Arriba llamo a la funcion cliente"
 	puts "==========================="
 	puts ""
 	puts "Welcome to Simple Blockchain In Ruby !"
