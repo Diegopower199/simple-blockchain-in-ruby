@@ -16,4 +16,5 @@ loop do
         puts msg
         puts "#{client.eof?}"
     end
+    
 end
