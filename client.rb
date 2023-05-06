@@ -4,15 +4,12 @@ require './blockchain.rb'
 
 
     begin 
-        socket = TCPSocket.new('localhost', 3001)
+        socket = TCPSocket.new('localhost', 3000)
         puts socket
         socket.write("Funciona bien la llamada al cliente\n")
         puts socket.gets
-        puts "HOLAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
         launcher
-
-        puts "AAAAAAAAAAA"
 
     rescue
         puts "Se ha producido un error: #{error.message}"

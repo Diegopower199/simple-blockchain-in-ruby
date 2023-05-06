@@ -1,7 +1,7 @@
 
 require 'socket'
 
-server = TCPServer.new('localhost', 3001)
+server = TCPServer.new('localhost', 3000)
 
 $stdout.sync = true
 
