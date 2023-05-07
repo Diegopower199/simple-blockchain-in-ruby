@@ -7,13 +7,14 @@ Improved version of "Build your own blockchain from scratch in 20 lines of Ruby!
 
 # Run it
 
-## First 
+## First Terminal (Server Terminal)
 ```
 $ ruby server.rb
 ```
 
+## Second Terminal (Client Terminal)
 ```
-$ ruby blockchain.rb
+$ ruby client.rb
 ```
 It will create the first block and then, prompt you to make a transaction by asking your name, what you want to send, the quantity, and for who. <br><br>
 You can set multiple transaction in one block. When you finished to write the transactions, the current block is added to the blockchain and take place in the ledger. <br>
